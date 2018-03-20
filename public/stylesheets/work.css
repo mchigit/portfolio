@@ -1,0 +1,36 @@
+.work-content {
+    margin: auto;
+    width: 80%;
+ }
+ 
+ .title {
+     text-align: center;
+     color: white
+ }
+ 
+ .card-image {
+     vertical-align: auto;
+     display: table;
+ }
+ 
+ .center-image {
+     width: 200px;
+     height: 200px;
+     display: table-cell;
+     vertical-align: middle;
+     padding: 10px;
+ }
+ 
+ .work-explain {
+     margin-top: 20px;
+ }
+ 
+ .work-explain ul li {
+     list-style-type: square;
+     list-style-position: inside;
+ }
+ 
+ .card {
+     margin: 15px;
+     margin-top: 40px;
+ }

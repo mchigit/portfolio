@@ -1,0 +1,49 @@
+.home {
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+    width: 400px;
+    height: 350px;
+}
+.headline {
+	margin-bottom: 0;
+}
+
+.home img {
+	border-radius: 20%;
+	max-width: 100%;
+	max-width: 100%;
+}
+
+.home-buttons a {
+    margin: 20px;
+    color: black;
+}
+
+.tagline {
+	display: inline-block;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+	.tagline {
+		font-size: 1.4em;
+	}
+}
+
+@media (min-width: 1025px) {
+	.home {
+		height: 80vh;
+		overflow-y: hidden;
+	}
+}
