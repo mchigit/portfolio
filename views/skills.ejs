@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Skills</title>
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel='stylesheet' href='/stylesheets/fontawesome.css' />
+    <link rel='stylesheet' href='/stylesheets/App.css' />
+    <link rel='stylesheet' href='/stylesheets/headerFooter.css' />
+    <link rel="stylesheet" href="/stylesheets/normalize.css">
+    <link rel="stylesheet" href="/stylesheets/skills.css">
+</head>
+
+<body>
+    <script src="/javascripts/scripts.js"></script>
+    <script src="/javascripts/materialize.min.js"></script>
+    <%- include header.ejs %>
+        <div class="skills-container">
+            <div class="skills-content">
+                <img src="/images/web_dev.png">
+                <div class="content-explain">
+                    <h1>Web Development</h1>
+                    <hr/>
+                    <p>Two years of Full Stack web development using various frameworks and different backend languages</p>
+                    <ul>
+                        <li>
+                            <p>
+                                <b>Languages:</b> JavaScript, C#, Scala, Java, Ruby, C++, Python, HTML/CSS</p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Libraries/Frameworks:</b> React/Redux, Node/Express, ASP.NET, Rails, JQuery, Spring</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-content">
+                <img src="/images/database.svg">
+                <div class="content-explain">
+                    <h1>Database &amp; Storage</h1>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <p>Experience with database technologies such as PostgreSQL, MySQL, SQL Server </p>
+                        </li>
+                        <li>
+                            <p>Worked with cloud storage services such as AWS S3, EC2 and RDS, as well as data query tools such
+                                as PrestoDB</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-content">
+                <img src="/images/data_structure.png">
+                <div class="content-explain">
+                    <h1>Algorithm &amp; Data Structure</h1>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <p>Strong knowledge of databases and advanced data structures such as Hash Tables and Trees</p>
+                        </li>
+                        <li>
+                            <p>Experience working with multi-threading and familiar with concurrent computing</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skills-content">
+                <img src="/images/tools.svg">
+                <div class="content-explain">
+                    <h1>Tools</h1>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <p>
+                                <b>Tools:</b> Redis, Git, NetScaler, Vagrant, Unix Shell, Android Studio</p>
+                        </li>
+                        <li>
+                            <p>
+                                <b>Experience: </b>Working knowledge with building and shipping softwares using Ubuntu</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <%- include footer.ejs %>
+            <%- include contactModal.ejs %>
+</body>
+
+</html>

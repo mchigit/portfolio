@@ -1,12 +1,24 @@
 <header class="main-header">
-		<h1 class="name"><a href="/">Michael Chi</a></h1>
+		<h1 class="name"><a href="/"><%= headerTitle %></a></h1>
 		<ul class="main-nav">
-			<li><a href="#">skills</a></li>
-			<li><a href="#">projects</a></li>
-			<li><a href="#">work</a></li>
+			<li><a href="/skills">skills</a></li>
+			<li><a class="modal-trigger" href="#comingSoon">projects</a></li>
+			<li><a class="modal-trigger" href="#comingSoon">work</a></li>
         </ul>
         <div class="nav-icons">
-            <a class="fab fa-linkedin fa-2x" href="https://www.linkedin.com/in/michael-chi/"></a>
-            <a class="fab fa-github-square fa-2x" href="https://github.com/michaelchi1997"></a>
+            <a class="fab fa-linkedin fa-2x tooltipped" data-position="bottom" data-delay="50"
+            data-tooltip="Linkedin"
+            href="https://www.linkedin.com/in/michael-chi/"></a>
+            <a class="fab fa-github-square fa-2x tooltipped" data-position="bottom" data-delay="50"
+            data-tooltip="Github"
+            href="https://github.com/michaelchi1997"></a>
+            <a class="fas fa-envelope-square fa-2x modal-trigger tooltipped" data-position="bottom" data-delay="50"
+             data-tooltip="Contact Me!" data-target="modal1" href="#modal1"></a>
         </div>
 </header><!--/.main-header-->   
+<div id="comingSoon" class="modal">
+        <div class="modal-content">
+          <h4>Coming Soon!</h4>
+          <p>Sorry, we are busy working on it!</p>
+        </div>
+      </div>

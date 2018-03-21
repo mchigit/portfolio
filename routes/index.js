@@ -4,11 +4,11 @@ const router = express.Router();
 const bodyParser = require('body-parser');
 
 router.get('/', function(req, res, next) {
-  res.render('index');
+  res.render('index', {headerTitle: "Michael Chi"});
 });
 
 router.get('/skills', function(req, res, next) {
-  res.render('skills');
+  res.render('skills', {headerTitle: "Home"});
 });
 
 router.get('/projects', function(req, res, next) {

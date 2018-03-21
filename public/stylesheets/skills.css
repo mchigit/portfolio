@@ -1,41 +1,51 @@
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    background: #3acec2;
+    margin: auto;
+    padding: 40px 10px;;
+    align-items: center;
+    justify-content: center;
+}
+
 .skills-content {
-   margin: auto;
-   width: 80%;
-}
-
-.title {
-    text-align: center;
-    color: white
-}
-
-.card-image {
-    vertical-align: auto;
-    display: table;
-}
-
-.center-image img {
-    padding: 5px;
-    border: solid gray;
-}
-
-.center-image {
-    width: 250px;
+    padding: 10px 10px;
+    background: lightgray;
+    border-radius: 20px;
+    width: 95%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
     height: 250px;
-    display: table-cell;
-    vertical-align: middle;
-    padding: 10px;
+    overflow-y: auto;
 }
 
-.skills-explain {
-    margin-top: 20px;
+.skills-content img {
+    max-width: 80%;
+    max-height: 80%;
+    align-self: center;
 }
 
-.skills-explain ul li {
-    list-style-type: square;
-    list-style-position: inside;
+.content-explain {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 10px;
 }
 
-.card {
-    margin: 15px;
-    margin-top: 40px;
+.content-explain h1{
+    margin-bottom: 5px;
+}
+
+@media (min-width: 1025px) {
+    .skills-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .skills-content {
+        flex: 0 70%;
+        margin: 10px 10px;
+        height: 250px;
+    }
+
 }
