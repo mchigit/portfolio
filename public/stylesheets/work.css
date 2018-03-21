@@ -1,36 +1,59 @@
-.work-content {
+.work-container {
+    display: flex;
+    flex-direction: column;
+    background: #3acec2;
     margin: auto;
-    width: 80%;
- }
- 
- .title {
-     text-align: center;
-     color: white
- }
- 
- .card-image {
-     vertical-align: auto;
-     display: table;
- }
- 
- .center-image {
-     width: 200px;
-     height: 200px;
-     display: table-cell;
-     vertical-align: middle;
-     padding: 10px;
- }
- 
- .work-explain {
-     margin-top: 20px;
- }
- 
- .work-explain ul li {
-     list-style-type: square;
-     list-style-position: inside;
- }
- 
- .card {
-     margin: 15px;
-     margin-top: 40px;
- }
+    padding: 40px 10px;;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-content {
+    padding: 10px 10px;
+    background: lightgray;
+    border-radius: 20px;
+    width: 95%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.content-img {
+    height: 100%;
+    width: 200px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.content-img img {
+    align-self: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.content-explain {
+  width: 100%;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.content-explain h1{
+    margin-bottom: 5px;
+}
+
+@media (min-width: 1025px) {
+    .work-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .work-content {
+        flex: 0 70%;
+        margin: 10px 10px;
+        height: 250px;
+    }
+
+}

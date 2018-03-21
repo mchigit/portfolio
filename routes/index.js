@@ -16,7 +16,7 @@ router.get('/projects', function(req, res, next) {
 });
 
 router.get('/work', function(req, res, next) {
-  res.render('work');
+  res.render('work', {headerTitle: "Home"});
 });
 
 router.post('/send_email', (req, res, next) => {
