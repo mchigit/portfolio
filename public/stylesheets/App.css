@@ -6,8 +6,9 @@ body {
 	font-family: 'Varela Round', sans-serif;
 	line-height: 1.6;
 	color: #3a3a3a;
-	margin: 0;
+    margin: 0;
 }
+
 
 ul {
     margin: 0;
@@ -29,6 +30,23 @@ h3 {
 }
 a {
     text-decoration: none;
+}
+
+#toast-container {
+    top: auto !important;
+    left: auto !important;
+    bottom: 5%;
+    right:3%;
+  }
+
+.success-toast {
+    background-color: #3BB059;
+    color: white;
+}
+
+.warning-toast {
+    background-color: #FF9B2B;
+    color: white;
 }
 
 /* div {

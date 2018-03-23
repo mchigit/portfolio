@@ -1,33 +1,40 @@
 <div id="modal1" class="modal">
-        <form class="col s12" method="POST" action="send_email">
-            <div class="modal-content">
-                <h4>Send Me An Email!</h4>
+    <form class="col s12" method="POST" action="send_email">
+        <div class="modal-content">
+            <h4>Send Me An Email!</h4>
+            <div class="row">
+
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate" required="" aria-required="true" name="first_name">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate" required="" aria-required="true" name="last_name">
+                    <label for="last_name">Last Name</label>
+                </div>
                 <div class="row">
-    
-                    <div class="input-field col s6">
-                        <input id="first_name" type="text" class="validate" name="first_name">
-                        <label for="first_name">First Name</label>
+                    <div class="input-field col s12">
+                        <input id="email" type="email" name="email" required="" aria-required="true">
+                        <label for="email">Email Address</label>
                     </div>
-                    <div class="input-field col s6">
-                        <input id="last_name" type="text" class="validate" name="last_name">
-                        <label for="last_name">Last Name</label>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" name="email">
-                            <label for="email">Email Address</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <textarea id="message_area" class="materialize-textarea" name="message" class="validate"></textarea>
-                            <label for="message_area">Message</label>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea id="message_area" class="materialize-textarea" name="message" required="" aria-required="true" class="validate"></textarea>
+                        <label for="message_area">Message</label>
                     </div>
                 </div>
             </div>
-            <div class="modal-footer">
-                <button id="send_email_btn" type="submit" class="modal-action waves-effect waves-green btn-flat">Send</button>
-            </div>
-        </form>
+        </div>
+        <div class="modal-footer">
+            <button id="send_email_btn" type="submit" class="modal-action waves-effect waves-green btn-flat">Send</button>
+        </div>
+    </form>
+    <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
     </div>
+</div>
