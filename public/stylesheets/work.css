@@ -16,22 +16,11 @@
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    height: 250px;
-    overflow-y: auto;
+    height: auto;
 }
 
 .content-img {
-    height: 100%;
-    width: 200px;
-    margin-right: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.content-img img {
-    align-self: center;
-    max-height: 100%;
-    max-width: 100%;
+    display: none;
 }
 
 .content-explain {
@@ -54,6 +43,20 @@
         flex: 0 70%;
         margin: 10px 10px;
         height: 250px;
+    }
+
+    .content-img {
+        height: 100%;
+        width: 200px;
+        margin-right: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .content-img img {
+        align-self: center;
+        max-height: 100%;
+        max-width: 100%;
     }
 
 }
