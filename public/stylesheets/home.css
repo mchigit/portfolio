@@ -10,7 +10,8 @@
 
 .logo {
     width: 400px;
-    height: 350px;
+	height: 350px;
+	padding: 20px;
 }
 .headline {
 	margin-bottom: 0;
@@ -22,6 +23,11 @@
 	max-width: 100%;
 }
 
+.home-buttons {
+	display: flex;
+	flex-direction: row;
+}
+
 .home-buttons a {
     margin: 20px;
     color: black;
@@ -29,6 +35,7 @@
 
 .tagline {
 	display: inline-block;
+	padding: 10px;
 }
 
 /* ================================= 
@@ -44,6 +51,6 @@
 @media (min-width: 1025px) {
 	.home {
 		height: 80vh;
-		overflow-y: hidden;
+		overflow-y: auto;
 	}
 }
