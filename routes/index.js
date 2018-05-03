@@ -12,7 +12,7 @@ router.get('/skills', function(req, res, next) {
 });
 
 router.get('/projects', function(req, res, next) {
-  
+  res.render('projects', {headerTitle: "Home"});
 });
 
 router.get('/work', function(req, res, next) {

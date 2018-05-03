@@ -1,0 +1,35 @@
+.projects-container {
+    background: #3acec2;
+    margin: auto;
+    padding: 40px 10px;;
+}
+
+.project-content {
+    padding: 10px 10px;
+    background: lightgray;
+    border-radius: 20px;
+    width: 95%;
+    margin-top: 30px;
+    height: auto;
+}
+
+.content-explain {
+    width: 100%;
+}
+
+.project-image {
+    margin-top: 10px;
+}
+
+.project-image img {
+    max-width:100%;
+    max-height:100%;
+}
+
+.project-detail {
+    margin-top: 10px;
+}
+
+.project-github {
+    text-align: center;
+}
