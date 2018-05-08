@@ -43,11 +43,17 @@
 }
 
 @media (min-width: 1025px) {
+
+    .projects-container {
+        height: 80vh;
+		overflow-y: auto;
+    }
     
     .projects-row {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        flex-shrink: 0;
     }
 
     .project-content {
