@@ -6,6 +6,8 @@ Color Theme & Header Idea: Taken from [CSS flexbox course](https://teamtreehouse
 
 Preloader: https://ihatetomatoes.net/create-custom-preloading-screen/
 
+Sending Email: https://nodemailer.com/about/
+
 Photos: https://unsplash.com
 
 Material Design: https://materializecss.com
