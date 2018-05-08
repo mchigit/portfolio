@@ -21,6 +21,10 @@ $(document).ready(function() {
             dismissible: true
         });
 
+        setTimeout(function(){
+            $('body').addClass('loaded');
+        }, 2000);
+
         $('form').on('submit', function(event) {
             event.preventDefault();
             $(".spinner").css("display", "block");
