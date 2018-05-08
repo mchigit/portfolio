@@ -1,14 +1,15 @@
 .projects-container {
     background: #3acec2;
     margin: auto;
-    padding: 40px 10px;;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-content {
     padding: 10px 10px;
     background: lightgray;
     border-radius: 20px;
-    width: 95%;
     margin-top: 30px;
     height: auto;
 }
@@ -32,4 +33,26 @@
 
 .project-github {
     text-align: center;
+}
+
+
+@media (min-width: 769px) {
+    .project-content {
+        margin: 10px 80px;
+    }
+}
+
+@media (min-width: 1025px) {
+    
+    .projects-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .project-content {
+        flex: 0 20%;
+        margin: 10px 40px;
+    }
+
 }
