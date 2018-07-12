@@ -2,6 +2,7 @@ const express = require('express');
 const MailClass = require('../bin/email');
 const router = express.Router();
 const bodyParser = require('body-parser');
+const fs = require('fs');
 
 router.get('/', function(req, res, next) {
   res.render('index', {headerTitle: "Michael Chi"});
@@ -31,6 +32,18 @@ router.post('/send_email', (req, res, next) => {
       });
     }
   });
+});
+
+router.get('/resume', (req, res, next) => {
+  var stream = fs.readStream('/files/Michael_Chi_Resume.pdf');
+  var fileName = "Michael_Chi_Resume.pdf";
+
+  fileName = encodeURIComponent(fileName);
+
+  res.setHeader('Content-disposition', 'inline; filename="' + filename + '"');
+  res.setHeader('Content-type', 'application/pdf');
+
+  stream.pipe(res);
 });
 
 module.exports = router;
