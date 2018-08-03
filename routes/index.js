@@ -34,16 +34,4 @@ router.post('/send_email', (req, res, next) => {
   });
 });
 
-router.get('/resume', (req, res, next) => {
-  var stream = fs.readStream('/files/Michael_Chi_Resume.pdf');
-  var fileName = "Michael_Chi_Resume.pdf";
-
-  fileName = encodeURIComponent(fileName);
-
-  res.setHeader('Content-disposition', 'inline; filename="' + filename + '"');
-  res.setHeader('Content-type', 'application/pdf');
-
-  stream.pipe(res);
-});
-
 module.exports = router;
